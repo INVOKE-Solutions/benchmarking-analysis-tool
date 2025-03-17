@@ -171,4 +171,7 @@ cython_debug/
 .pypirc
 
 # Excel
-.xlsx
+*.xlsx
+
+# Markdown
+*.md
