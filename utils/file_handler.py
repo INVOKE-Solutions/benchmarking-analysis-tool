@@ -3,7 +3,7 @@ import streamlit as st
 
 def upload_file():
     """Handle file upload"""
-    uploaded_file = st.file_uploader("Upload CSV or Excel file", type=["csv", "xlsx"])
+    uploaded_file = st.file_uploader("Upload data in CSV or Excel file", type=["csv", "xlsx"])
     if uploaded_file:
         try:
             if uploaded_file.name.endswith(".csv"):
