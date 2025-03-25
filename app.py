@@ -11,6 +11,26 @@ import logging
 logging.basicConfig(filename="user_prompts.log", level=logging.INFO, 
                     format="%(asctime)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 
+# --------------------Page configuration--------------------
+
+st.set_page_config(
+    page_title='Benchmarking Analysis App Demo',
+    layout="centered",    
+    initial_sidebar_state="auto"
+)
+
+hide_streamlit_style = """
+            <style>
+            header {visibility: hidden;}
+            footer {visibility: hidden;}
+            #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem; padding-bottom: 4rem;}
+            </style>
+            """
+
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+# --------------------Start main page--------------------
+
 def main():
     st.title("Benchmarking Analysis App Demo")
     # Authenticate user
