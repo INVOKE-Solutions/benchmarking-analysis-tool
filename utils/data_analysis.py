@@ -11,6 +11,7 @@ def analyze_data(df: pd.DataFrame, user_prompt: str) -> str:
     client = OpenAI(api_key = st.secrets["OPENAI_API_KEY"])
 
     if not user_prompt:
+        st.error("User prompt cannot be empty.")
         raise ValueError("User prompt cannot be empty.")
     else:
         prompt = user_prompt
