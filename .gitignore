@@ -177,7 +177,7 @@ cython_debug/
 *.md
 
 # Streamlit
-# .streamlit/secrets.toml
+.streamlit/secrets.toml
 
 # PDF
 *.pdf
